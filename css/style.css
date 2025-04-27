@@ -29,6 +29,7 @@ body {
 /* Container Styling */
 .container {
   padding: 20px;
+  margin-top: 10%;
   animation: downToUp 1s ease-out; /* Animation added */
 }
 
