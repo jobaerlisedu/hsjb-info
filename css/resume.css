@@ -1,0 +1,76 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(rgba(32, 31, 31, 0.7), rgba(32, 31, 31, 0.7)), url('../asset/img/background.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Under Construction Section */
+  .under-construction {
+    animation: downToUp 1s ease-out;
+  }
+  
+  /* Construction Icon */
+  .construction-icon {
+    font-size: 80px;
+    color: #6C63FF;
+    margin-bottom: 20px;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background: #6C63FF;
+    color: #fff;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-color: #6C63FF;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    border-color: #6C63FF;
+    background: #ffffff;
+    color: #6C63FF;
+    transform: translateY(-3px);
+  }
+  
+  /* Down to Up Animation */
+  @keyframes downToUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
