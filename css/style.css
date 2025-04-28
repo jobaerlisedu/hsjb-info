@@ -28,7 +28,7 @@ body {
 
 /* Container Styling */
 .container {
-  margin-top: 50%;
+  margin-top: 100px;
   padding: 20px;
   animation: downToUp 1s ease-out;
 }
@@ -199,12 +199,12 @@ p {
     height: 40px;
     line-height: 40px;
     font-size: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
 /* Extra small devices */
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
   h1 {
     font-size: 20px;
   }
@@ -212,4 +212,4 @@ p {
   p {
     font-size: 16px;
   }
-} */
+}
