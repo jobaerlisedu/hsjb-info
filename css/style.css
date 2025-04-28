@@ -28,7 +28,7 @@ body {
 
 /* Container Styling */
 .container {
-  /* margin-top: 100px; */
+  margin-top: 50px;
   padding: 20px;
   animation: downToUp 1s ease-out;
 }
@@ -163,7 +163,7 @@ p {
 /* For mobile devices */
 @media (max-width: 600px) {
   .container {
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 15px;
   }
 
