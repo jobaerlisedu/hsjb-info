@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(rgba(22, 21, 21, 0.979), rgba(22, 21, 21, 0.7)), url('../asset/img/background.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(22, 21, 21, 0.979), rgba(22, 21, 21, 0.7)), url('../img/background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   min-height: 100vh;
