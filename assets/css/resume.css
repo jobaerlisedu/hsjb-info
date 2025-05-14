@@ -486,12 +486,13 @@ section,
 .about .content p {
   line-height: 22px;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
   text-align: justify;
 }
 
 .about .content ul {
   list-style: none;
+  margin: 20px;
   padding: 0;
 }
 
