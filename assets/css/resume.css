@@ -478,6 +478,11 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about img {
+  border: 3px solid var(--accent-color);
+  border-radius: 5%;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -559,6 +564,8 @@ section,
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
+  width: 500px;
 }
 
 .resume .resume-item {
@@ -566,6 +573,8 @@ section,
   margin-top: -2px;
   border-left: 2px solid var(--accent-color);
   position: relative;
+  width: 500px;
+  margin-right: 20px;
 }
 
 .resume .resume-item h4 {
