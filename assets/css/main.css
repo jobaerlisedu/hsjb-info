@@ -541,7 +541,7 @@ section,
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 }
@@ -562,8 +562,7 @@ section,
 }
 
 .about img {
-  border: 5px solid var(--accent-color);
-  border-radius: 50%;
+  border-radius: 5px;
 } 
 
 /*--------------------------------------------------------------
