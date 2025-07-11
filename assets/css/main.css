@@ -216,7 +216,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--surface-color);
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -695,14 +695,18 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+.services {
   background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+}
+.services .service-item {
+  background-color: var(--background-color);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 60px 30px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  border-bottom: 3px solid #5f687b; /* Updated border color */
 }
 
 .services .service-item .icon {
@@ -745,9 +749,9 @@ section,
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
+/* .services .service-item:hover {
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .services .service-item.item-cyan i {
   color: var(--accent-color);
