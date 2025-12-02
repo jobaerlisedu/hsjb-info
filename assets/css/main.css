@@ -559,10 +559,57 @@ section,
 
 .about .content p {
   text-align: justify;
+  padding-bottom: 20px;
 }
 
 .about img {
   border-radius: 10px;
+}
+
+/* Download Resume Button - Custom Style */
+.resume-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 4px 15px var(--accent-color); */
+    cursor: pointer;
+}
+
+.resume-download-btn:hover {
+    background: var(--background-color);
+    transform: translateY(-3px);
+    /* box-shadow: 0 8px 25px var(--default-color); */
+    color: var(--default-color);
+    text-decoration: none;
+}
+
+.resume-download-btn:active {
+    transform: translateY(-1px);
+}
+
+.resume-download-btn i {
+    font-size: 1.2rem;
+}
+
+/* Optional: Dark mode variation (if your site supports dark theme) */
+@media (prefers-color-scheme: dark) {
+    .resume-download-btn {
+        background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+        box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+    }
+    .resume-download-btn:hover {
+        box-shadow: 0 8px 25px rgba(13, 110, 253, 0.5);
+    }
 }
 
 /*--------------------------------------------------------------
