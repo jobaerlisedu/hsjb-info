@@ -604,11 +604,13 @@ section,
 /* Optional: Dark mode variation (if your site supports dark theme) */
 @media (prefers-color-scheme: dark) {
     .resume-download-btn {
-        background: linear-gradient(135deg, #0d6efd, #0b5ed7);
-        box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+        background: var(--accent-color);
+        /* box-shadow: 0 4px 15px var(--accent-color); */
     }
     .resume-download-btn:hover {
-        box-shadow: 0 8px 25px rgba(13, 110, 253, 0.5);
+        color: var(--default-color);
+        background: var(--background-color);
+        /* box-shadow: 0 8px 25px var(--accent-color); */
     }
 }
 
