@@ -389,6 +389,7 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -1047,6 +1048,38 @@ section,
   display: block !important;
 }
 
+/*--------------------------------------------------------------
+# Blog Section Scroll Animation (ONLY BLOG)
+--------------------------------------------------------------*/
+
+/* Initial hidden state */
+.blog .blog-item[data-aos] {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition-property: opacity, transform;
+}
+
+/* When animated */
+.blog .blog-item.aos-animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover effect (no conflict with AOS) */
+.blog .blog-item:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .blog .blog-item[data-aos] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
 /* Equal height columns */
 .blog .col-lg-4,
 .blog .col-md-6 {
@@ -1152,9 +1185,11 @@ section,
 }
 
 .btn-resume-style:hover {
-  background: color-mix(in srgb, var(--accent-color), #000 15%);
-  color: #fff;
-  transform: translateY(-2px);
+  background: var(--background-color);
+  transform: translateY(-3px);
+  /* box-shadow: 0 8px 25px var(--default-color); */
+  color: var(--default-color);
+  text-decoration: none;
 }
 
 .btn-resume-style:focus {
