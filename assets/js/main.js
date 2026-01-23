@@ -175,3 +175,74 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.querySelectorAll('.blog-item, .blog-details').forEach(container => {
+  // If on listing page, get URL from the title link. If on detail page, use current URL.
+  const linkElement = container.querySelector('.post-title a');
+  const url = linkElement ? linkElement.href : window.location.href;
+  const title = container.querySelector('h2, h3').innerText;
+
+  const twitterBtn = container.querySelector('.share-twitter');
+  const linkedinBtn = container.querySelector('.share-linkedin');
+  const shareBtn = container.querySelector('.share-general');
+
+  if (twitterBtn) {
+    twitterBtn.setAttribute('href', `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`);
+    twitterBtn.setAttribute('target', '_blank');
+  }
+  
+  if (linkedinBtn) {
+    linkedinBtn.setAttribute('href', `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`);
+    linkedinBtn.setAttribute('target', '_blank');
+  }
+
+  if (shareBtn) {
+    shareBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).catch(console.error);
+      } else {
+        // Fallback: Copy to clipboard
+        navigator.clipboard.writeText(url);
+        alert('Link copied to clipboard!');
+      }
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.blog-details, .blog-item').forEach(container => {
+        // Find the URL: Use the link in the title if on listing page, otherwise use current URL
+        const titleLink = container.querySelector('.post-title a');
+        const url = titleLink ? titleLink.href : window.location.href;
+        const title = container.querySelector('h2, h3').innerText;
+
+        // Select the buttons
+        const twitterBtn = container.querySelector('.bi-twitter-x')?.parentElement;
+        const linkedinBtn = container.querySelector('.bi-linkedin')?.parentElement;
+        const shareBtn = container.querySelector('.bi-share')?.parentElement;
+
+        if (twitterBtn) {
+            twitterBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
+            twitterBtn.target = "_blank";
+        }
+        
+        if (linkedinBtn) {
+            // Updated to use the 2026-standard LinkedIn share URL
+            linkedinBtn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+            linkedinBtn.target = "_blank";
+        }
+
+        if (shareBtn) {
+            shareBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (navigator.share) {
+                    navigator.share({ title: title, url: url }).catch(() => {});
+                } else {
+                    navigator.clipboard.writeText(url);
+                    alert('Link copied to clipboard!');
+                }
+            });
+        }
+    });
+});
