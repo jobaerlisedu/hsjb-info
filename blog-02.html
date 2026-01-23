@@ -84,7 +84,7 @@
             <i class="bi bi-chevron-left me-1"></i> Back to Blogs
           </a>
         </div>
-        <h1>Technical Blog</h1>
+        <h1>Technical Digest</h1>
       </div>
     </section>
 
@@ -103,7 +103,7 @@
               <h2 class="mb-4" style="font-weight: 800; color: var(--heading-color);">MikroTik Advanced Queue & Traffic Shaping Guide</h2>
               
               <div class="content">
-                <p class="lead">Bandwidth management is often the most misunderstood aspect of network administration. In a world where latency-sensitive applications like VoIP and gaming coexist with data-heavy backups, simple speed limits are no longer enough. This guide dives deep into MikroTik's Queue Tree and HTB (Hierarchical Token Bucket) to master traffic shaping.</p>
+                <p>Bandwidth management is often the most misunderstood aspect of network administration. In a world where latency-sensitive applications like VoIP and gaming coexist with data-heavy backups, simple speed limits are no longer enough. This guide dives deep into MikroTik's Queue Tree and HTB (Hierarchical Token Bucket) to master traffic shaping.</p>
 
                 <h3>1. Understanding the Packet Flow and Mangle</h3>
                 <p>Before we can shape traffic, we must identify it. In MikroTik, this happens in the <strong>Mangle</strong> facility of the firewall. To perform advanced shaping, you must mark packets based on their protocol, port, or source/destination. For the most efficient results, always use <code>action=mark-connection</code> followed by <code>action=mark-packet</code>. This reduces CPU load significantly because the router only inspects the full packet header once per connection.</p>
