@@ -1,28 +1,40 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #45505b; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #272829;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45505b;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #45505b;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #45505b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #45505b; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #45505b;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #45505b;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #0563bb;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -569,50 +581,51 @@ section,
 
 /* Download Resume Button - Custom Style */
 .resume-download-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: left;
-    gap: 10px;
-    padding: 14px 32px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #ffffff;
-    background: var(--accent-color);
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    /* box-shadow: 0 4px 15px var(--accent-color); */
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 15px var(--accent-color); */
+  cursor: pointer;
 }
 
 .resume-download-btn:hover {
-    background: var(--background-color);
-    transform: translateY(-3px);
-    /* box-shadow: 0 8px 25px var(--default-color); */
-    color: var(--default-color);
-    text-decoration: none;
+  background: var(--background-color);
+  transform: translateY(-3px);
+  /* box-shadow: 0 8px 25px var(--default-color); */
+  color: var(--default-color);
+  text-decoration: none;
 }
 
 .resume-download-btn:active {
-    transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 .resume-download-btn i {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* Optional: Dark mode variation (if your site supports dark theme) */
 @media (prefers-color-scheme: dark) {
-    .resume-download-btn {
-        background: var(--accent-color);
-        /* box-shadow: 0 4px 15px var(--accent-color); */
-    }
-    .resume-download-btn:hover {
-        color: var(--default-color);
-        background: var(--background-color);
-        /* box-shadow: 0 8px 25px var(--accent-color); */
-    }
+  .resume-download-btn {
+    background: var(--accent-color);
+    /* box-shadow: 0 4px 15px var(--accent-color); */
+  }
+
+  .resume-download-btn:hover {
+    color: var(--default-color);
+    background: var(--background-color);
+    /* box-shadow: 0 8px 25px var(--accent-color); */
+  }
 }
 
 /*--------------------------------------------------------------
@@ -709,6 +722,7 @@ section,
 .services {
   background-color: var(--surface-color);
 }
+
 .services .service-item {
   background-color: var(--background-color);
   height: 100%;
@@ -716,7 +730,8 @@ section,
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
-  border-bottom: 3px solid #5f687b; /* Updated border color */
+  border-bottom: 3px solid #5f687b;
+  /* Updated border color */
 }
 
 .services .service-item .icon {
@@ -729,7 +744,8 @@ section,
   line-height: 0;
   transition: 0.3s;
   color: #5f687b;
-  background: rgba(95, 104, 123, 0.1); /* Subtle background matching main color */
+  background: rgba(95, 104, 123, 0.1);
+  /* Subtle background matching main color */
 }
 
 .services .service-item h3 {
@@ -744,7 +760,8 @@ section,
 
 /* Hover Effects */
 .services .service-item:hover {
-  background: #5f687b; /* Hover background color */
+  background: #5f687b;
+  /* Hover background color */
 }
 
 .services .service-item:hover h3,
@@ -1038,6 +1055,7 @@ section,
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
 }
+
 .php-email-form .loading,
 .php-email-form .error-message,
 .php-email-form .sent-message {
@@ -1068,7 +1086,7 @@ section,
 /* Hover effect (no conflict with AOS) */
 .blog .blog-item:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 /* Mobile optimization */
@@ -1094,14 +1112,14 @@ section,
   display: flex;
   flex-direction: column;
   width: 100%;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.4s ease;
 }
 
 /* Hover */
 .blog .blog-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 /* Accent bar */
