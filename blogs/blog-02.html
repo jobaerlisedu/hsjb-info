@@ -19,11 +19,6 @@
 
   <style>
     .blog-details .content-wrapper {
-      background-color: var(--surface-color);
-      padding: 60px 50px;
-      border-radius: 15px;
-      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
-      margin-top: -80px;
       position: relative;
       z-index: 10;
     }
@@ -108,16 +103,18 @@
     <section class="blog-details section">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-10" data-aos="fade-up">
+          <div class="col-lg-12" data-aos="fade-up">
 
-            <div class="content-wrapper shadow-lg">
-              <div class="post-meta">
+            <h2 class="mb-4 text-center" style="font-weight: 800; color: var(--heading-color);">MikroTik Advanced Queue & Traffic Shaping Guide</h2>
+
+            <div class="content-wrapper">
+              <div class="post-meta text-center">
                 <span class="me-4"><i class="bi bi-person"></i> Md. Jobaer Hossain</span>
                 <span class="me-4"><i class="bi bi-calendar"></i> Jan 22, 2026</span>
                 <span class="me-4"><i class="bi bi-clock"></i> 15 Min Read</span>
               </div>
 
-              <h2 class="mb-4" style="font-weight: 800; color: var(--heading-color);">MikroTik Advanced Queue & Traffic Shaping Guide</h2>
+              
               
               <div class="content">
                 <p>Bandwidth management is often the most misunderstood aspect of network administration. In a world where latency-sensitive applications like VoIP and gaming coexist with data-heavy backups, simple speed limits are no longer enough. This guide dives deep into MikroTik's Queue Tree and HTB (Hierarchical Token Bucket) to master traffic shaping.</p>
